@@ -1,0 +1,26 @@
+[2022-09-20T19:37:57.980+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: exemplo-dag-docker.print_message manual__2022-09-20T19:30:04.406484+00:00 [queued]>
+[2022-09-20T19:37:58.091+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: exemplo-dag-docker.print_message manual__2022-09-20T19:30:04.406484+00:00 [queued]>
+[2022-09-20T19:37:58.092+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-20T19:37:58.092+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 1
+[2022-09-20T19:37:58.092+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-20T19:37:58.236+0000] {taskinstance.py:1383} INFO - Executing <Task(DockerOperator): print_message> on 2022-09-20 19:30:04.406484+00:00
+[2022-09-20T19:37:58.241+0000] {standard_task_runner.py:54} INFO - Started process 2405 to run task
+[2022-09-20T19:37:58.312+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'exemplo-dag-docker', 'print_message', 'manual__2022-09-20T19:30:04.406484+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmpvxomnnz3']
+[2022-09-20T19:37:58.325+0000] {standard_task_runner.py:83} INFO - Job 9: Subtask print_message
+[2022-09-20T19:37:58.356+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/example_dag.py
+[2022-09-20T19:38:04.230+0000] {task_command.py:384} INFO - Running <TaskInstance: exemplo-dag-docker.print_message manual__2022-09-20T19:30:04.406484+00:00 [running]> on host adc8e6e00f46
+[2022-09-20T19:38:04.515+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=exemplo-dag-docker
+AIRFLOW_CTX_TASK_ID=print_message
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-20T19:30:04.406484+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-20T19:30:04.406484+00:00
+[2022-09-20T19:38:05.985+0000] {docker.py:262} INFO - Starting docker container from image docker-operator-etl:latest
+[2022-09-20T19:38:06.123+0000] {docker.py:273} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2022-09-20T19:38:15.791+0000] {docker.py:324} INFO - testando 2
+[2022-09-20T19:38:17.146+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=exemplo-dag-docker, task_id=print_message, execution_date=20220920T193004, start_date=20220920T193758, end_date=20220920T193817
+[2022-09-20T19:38:17.411+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-09-20T19:38:17.562+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

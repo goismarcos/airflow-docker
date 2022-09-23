@@ -1,0 +1,16 @@
+[2022-09-20T19:32:09.460+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: exemplo-dag-docker.print_message manual__2022-09-20T19:30:04.406484+00:00 [queued]>
+[2022-09-20T19:32:13.473+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: exemplo-dag-docker.print_message manual__2022-09-20T19:30:04.406484+00:00 [queued]>
+[2022-09-20T19:32:13.473+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-20T19:32:13.474+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-09-20T19:32:13.474+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-20T19:32:16.796+0000] {taskinstance.py:1383} INFO - Executing <Task(DockerOperator): print_message> on 2022-09-20 19:30:04.406484+00:00
+[2022-09-20T19:32:17.250+0000] {standard_task_runner.py:54} INFO - Started process 2223 to run task
+[2022-09-20T19:32:17.697+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'exemplo-dag-docker', 'print_message', 'manual__2022-09-20T19:30:04.406484+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmpd0kn4gxh']
+[2022-09-20T19:32:17.700+0000] {standard_task_runner.py:83} INFO - Job 8: Subtask print_message
+[2022-09-20T19:32:19.274+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/example_dag.py
+[2022-09-20T19:37:23.712+0000] {local_task_job.py:228} WARNING - State of this instance has been externally set to queued. Terminating instance.
+[2022-09-20T19:37:24.577+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 2223. PIDs of all processes in the group: [2223]
+[2022-09-20T19:37:24.577+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 2223
+[2022-09-20T19:37:25.864+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=2223, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='19:32:16') (2223) terminated with exit code Negsignal.SIGTERM
