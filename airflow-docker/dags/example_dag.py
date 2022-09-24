@@ -17,7 +17,8 @@ with DAG(
         image="docker-operator-etl:latest",
         task_id="message_and_save_csv",
         command="src/task.py",
-        force_pull=False
+        force_pull=False,
+        mounts=[Mount('/app/data', r'#SEU DIRETÓRIO', type='bind')]
     )
 
 if __name__ == "__main__":
