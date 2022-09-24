@@ -1,8 +1,8 @@
 
 ## Utilizando o conceito de Docker Operator para execução local do Airflow com Docker em execuções de código ETL fora da DAG do Airflow. 🇧🇷
 
-:heavy_check_mark: Facilidade de ter vários workspace.<br>
-:heavy_check_mark: Códigos ETL fora das DAG.<br>
+:heavy_check_mark: Facilidade de ter vários workspaces.<br>
+:heavy_check_mark: Códigos ETL fora da DAG.<br>
 :heavy_check_mark: Dependências fora do Airflow.
 ## 
 #### :dart: De início caso não tenha instalado, você precisa fazer a instalação do docker em sua máquina (exemplo no linux Ubuntu).
