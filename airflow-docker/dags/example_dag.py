@@ -11,11 +11,11 @@ with DAG(
     start_date=datetime(2022,9,20)
 ) as dag:
 
-    message_task = DockerOperator(
+    message_and_save_csv_task = DockerOperator(
         docker_url="tcp://docker-socket-proxy:2375",
         auto_remove=False,
         image="docker-operator-etl:latest",
-        task_id="print_message",
+        task_id="message_and_save_csv",
         command="src/task.py",
         force_pull=False
     )
