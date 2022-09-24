@@ -55,6 +55,10 @@
 
 - `docker compose up`
 
+##### 8. Após alguns minutos acesse no seu navegador o Airflow com `user:airflow` `senha:airflow` e teste a DAG construída:
+
+- `localhost:8080`
+
 ## :exclamation: Informações relevantes sobres os diretórios:
   - ##### *`airflow-docker-repository\docker-airflow-etl\src\taks.py`*: onde ficam os código Python de ETL.
   - ##### *`airflow-docker-repository\docker-airflow-etl\src\requirements.txt`*: Arquivo onde se especifica cada pacote utilizado no código Python.
