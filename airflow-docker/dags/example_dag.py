@@ -3,6 +3,7 @@ from email.mime import image
 from enum import auto
 from airflow import DAG
 from airflow.providers.docker.operators.docker import DockerOperator
+from docker.types import Mount
 
 with DAG(
     dag_id="exemplo-dag-docker",
